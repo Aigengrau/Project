@@ -1,8 +1,9 @@
 * {
   margin: 0px;
+  font-family:'font;
 }
 @font-face {
-  font-family:'FontName';
+  font-family:'font';
   src: url(source/Exo2.0-Thin.otf);
 }
 body {
@@ -11,24 +12,22 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card{
-  position: relative;
-  text-align: center;
+h1{
   color: white;
+}
+.card{
+  position:absolute;
+  text-align: center;
+  
 }
 .fuagra{
   text-align: center;
   position: absolute;
   top:30px;
   left:40px;
-  color: gray;
+  
 
 }
-/* .Nyamushka{
-  position: absolute;
-  top: 50px;
-  left: 40px;
-  color:black;
-} */
+
 
 
