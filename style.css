@@ -1,33 +1,51 @@
 * {
   margin: 0px;
-  font-family:'font;
+  font-family: 'font';
 }
+
 @font-face {
-  font-family:'font';
+  font-family: 'font';
   src: url(source/Exo2.0-Thin.otf);
 }
+
 body {
-  background-image:url(source/Pattern.png);
+  background-image: url(source/Pattern.png);
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
-h1{
-  color: white;
+
+span {
+  color: #ffffff;
+  font-size: 36px;
 }
-.card{
-  position:absolute;
+
+.container {
+  position: sticky;
   text-align: center;
+
+}
+
+img {
+  border-radius: 10px;
+  margin: 40px;
+  width: auto;
+  border: 4px solid rgb(43, 152, 224);
   
 }
-.fuagra{
+.cards {
+  display: flex;
+
+}
+
+.fuagra {
   text-align: center;
   position: absolute;
-  top:30px;
-  left:40px;
-  
+  top: 30px;
+  left: 40px;
+
+
+
 
 }
-
-
-
