@@ -1,7 +1,7 @@
 * {
   margin: 0px;
   font-family: 'font';
-    --background-color: rgb(22, 152, 217);
+  --background-color: rgb(22, 152, 217);
 }
 
 @font-face {
@@ -11,9 +11,6 @@
 
 body {
   background-image: url(source/Pattern.png);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
 }
 
@@ -24,41 +21,65 @@ span {
 
 .container {
   text-align: center;
-
 }
 
 .cards {
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-.card{
+
+.card {
   background-image: url(source/Photo.png);
-  margin: 4em;
-  height: 30em;
-  width: 20em;
-  background-size:cover;
-  border-radius: 1em;
+  margin: 2.5em;
+  margin-block: 1.5em;
+  height: 480px;
+  width: 320px;
+  background-size: cover;
+  border-radius: 12px;
   clip-path: polygon(16% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 11%);
-  border: .3em solid var(--background-color);
+  border: .4em solid var(--background-color);
   position: relative;
   isolation: isolate;
 }
 
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: var(--background-color);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  position: fixed;
+  transform: translate(11.5em,14em);
+}
+.card:hover {
+  --background-color: rgb(46, 168, 230)
+}
+.card:hover .circle{
+  --background-color: rgb(46, 168, 230)
+}
 
-.card::after,.card::before{
-  content:'';
+
+.card::after,
+.card::before {
+  content: '';
   position: absolute;
-  inset:0;
+  inset: 0;
 }
-.card::before{
-  background-color:var(--background-color) ;
-  z-index:-2;
+
+.card::before {
+  background-color: var(--background-color);
+  z-index: -2;
 }
-.card::after{
+
+.card::after {
   background-image: url(source/Photo.png);
   background-size: cover;
-  border-radius: .7em;
+  border-radius: 12px;
   z-index: -1;
   clip-path: polygon(16% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 11%);
 }
