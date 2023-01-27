@@ -43,21 +43,13 @@ span {
   clip-path: polygon(16% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 11%);
   border: .4em solid var(--background-color);
   position: relative;
-
-  
   isolation: isolate;
+  text-align: left;
 }
 
-.circle{
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  background: var(--background-color);
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  position: fixed;
-  transform: translate(11.5em, 14em);
+.inside {
+  margin-top: 1em;
+  margin-left: 3em;
 }
 
 .card:hover {
@@ -103,16 +95,54 @@ h5 {
   color: #666666;
   font-family: "Trebuchet MS";
 }
-.h1{
+
+.h1 {
   font-size: 48px;
   color: #000000;
   font-weight: bold;
   font-family: "Trebuchet MS";
 }
-h2{
+
+h2 {
   font-size: 24px;
   color: #000000;
   font-weight: bold;
   font-family: "Trebuchet MS";
 
+}
+
+h3 {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Trebuchet MS";
+}
+
+h4 {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Trebuchet MS";
+}
+
+h6 {
+  font-size: 14px;
+  color: #666666;
+  font-family: "Trebuchet MS";
+}
+
+a {
+  border-bottom: 1px dashed var(--background-color);
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background: var(--background-color);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  position:absolute;
+  right:0;
+  bottom: 0;
+  margin: 10px;
 }
