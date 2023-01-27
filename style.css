@@ -1,6 +1,5 @@
 * {
   margin: 0px;
-  font-family: 'font';
   --background-color: rgb(22, 152, 217);
 }
 
@@ -21,6 +20,7 @@ span {
 
 .container {
   text-align: center;
+  font-family: 'font';
 }
 
 .cards {
@@ -28,6 +28,7 @@ span {
   position: relative;
   justify-content: center;
   align-items: center;
+
 }
 
 
@@ -42,10 +43,12 @@ span {
   clip-path: polygon(16% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 11%);
   border: .4em solid var(--background-color);
   position: relative;
+
+  
   isolation: isolate;
 }
 
-.circle {
+.circle{
   width: 80px;
   height: 80px;
   border-radius: 100%;
@@ -54,12 +57,14 @@ span {
   color: #ffffff;
   text-align: center;
   position: fixed;
-  transform: translate(11.5em,14em);
+  transform: translate(11.5em, 14em);
 }
+
 .card:hover {
   --background-color: rgb(46, 168, 230)
 }
-.card:hover .circle{
+
+.card:hover .circle {
   --background-color: rgb(46, 168, 230)
 }
 
@@ -83,11 +88,31 @@ span {
   z-index: -1;
   clip-path: polygon(16% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 11%);
 }
-.text{
+
+.text {
   color: #ffffff;
   font-size: 13px;
-
 }
-.text a{
+
+.text a {
   color: var(--background-color);
+}
+
+h5 {
+  font-size: 16px;
+  color: #666666;
+  font-family: "Trebuchet MS";
+}
+.h1{
+  font-size: 48px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+}
+h2{
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+
 }
