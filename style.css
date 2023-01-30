@@ -163,6 +163,13 @@ h6 {
   color: #666666;
   font-family: "Trebuchet MS";
 }
-.selected {
-  background-color: var(--background-color);
+.disabled{
+  --background-color: grey;
+  pointer-events: none;
+}
+.disabled .inside{
+  opacity: 0.2;
+}
+.disabled::after{
+  opacity: 0.5;
 }
